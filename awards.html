@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2><marquee>AWARDS WIN BY CHETAN BAGHAT!!</marquee></h2>
+    <title>Document</title>
+    <header>
+          <h1>
+              <center>
+                  *-AWARDS*-
+              </center>
+          </h1>
+    </header>
+    <style>
+         body{
+             background-color:lightcoral;
+         }
+         
+    </style>
+     <script>
+        document.addEventListener("keyup", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+            if (keyCode == 44) {
+                stopPrntScr();
+            }
+        });
+function stopPrntScr() {
+
+            var inpFld = document.createElement("input");
+            inpFld.setAttribute("value", ".");
+            inpFld.setAttribute("width", "0");
+            inpFld.style.height = "0px";
+            inpFld.style.width = "0px";
+            inpFld.style.border = "0px";
+            document.body.appendChild(inpFld);
+            inpFld.select();
+            document.execCommand("copy");
+            inpFld.remove(inpFld);
+        }
+       function AccessClipboardData() {
+            try {
+                window.clipboardData.setData('text', "Access   Restricted");
+            } catch (err) {
+            }
+        }
+        setInterval("AccessClipboardData()", 300);
+    </script>
+</head>
+<body>
+   
+
+    <P style="font-size:35px;">
+        <h3 style="font-size: 25px;font-family:verdana;">
+            Award for Technical Excellence:
+        </h3>
+        Best Story:
+               Kai po che! (2013)
+                  Shared with:
+                Pubali Chaudhuri
+                    Abhishek Kapoor
+    </P>
+    <p>
+        <h2 style="font-weight: 100;font-color:blue;">
+               Best selling books
+         <img src="images (1).jpg"alt="image"style="border-radius:30%;width="200px";">      
+            
+        </h2>
+    </p>
+    <p>
+
+    </p>
+    <footer>
+        <div id="footer">
+            
+ 
+               <center>
+                        <a href="NEWPROJECT.HTML">HOME</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="awards.html">AWARDS</a>
+               </center>
+ </footer>
+    
+</body>
+</html>
